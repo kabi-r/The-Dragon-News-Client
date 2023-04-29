@@ -1,12 +1,12 @@
+import React from "react";
 import { Outlet } from "react-router-dom";
-import "./App.css";
-import Header from "./Component/Header";
-import Footer from "./Component/Footer";
+import Header from "../Component/Header";
+import Footer from "../Component/Footer";
 import { Col, Container, Row } from "react-bootstrap";
-import Leftnav from "./Shared/LeftNav/Leftnav";
-import Rightnav from "./Shared/RightNav/Rightnav";
+import Leftnav from "../Shared/LeftNav/Leftnav";
+import Rightnav from "../Shared/RightNav/Rightnav";
 
-function App() {
+const Main = () => {
   return (
     <>
       <Header></Header>
@@ -26,6 +26,6 @@ function App() {
       <Footer></Footer>
     </>
   );
-}
+};
 
-export default App;
+export default Main;
